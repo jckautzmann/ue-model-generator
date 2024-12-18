@@ -1,0 +1,13 @@
+{
+  "name": "ue-model-generator",
+  "version": "1.0.0",
+  "description": "Generates the AEM Universal Editor models based on a markdown file containing EDS blocks",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "md2model": "node src/md2model/index.js --file"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
