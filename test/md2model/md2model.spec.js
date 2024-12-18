@@ -14,7 +14,7 @@ import fs from 'node:fs/promises';
 import assert from 'assert';
 import { fileURLToPath } from 'url';
 import { describe, it } from 'mocha';
-import { md2models } from '../../../src/importer/md2model/index.js';
+import { md2models } from '../../src/md2model/index.js';
 
 // eslint-disable-next-line no-underscore-dangle
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

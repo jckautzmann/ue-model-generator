@@ -21,7 +21,7 @@ import createPageBlocks from '@adobe/helix-html-pipeline/src/steps/create-page-b
 import { h } from 'hastscript';
 import fixSections from '@adobe/helix-html-pipeline/src/steps/fix-sections.js';
 import { visitParents } from 'unist-util-visit-parents';
-import createHead from '../html2jcr/hast2jcr/hast-head.js';
+import createHead from '../hast2jcr/hast-head.js';
 import handlers from './handlers/index.js';
 
 function getHandler(node) {
