@@ -6,7 +6,7 @@ Generates AEM Universal Editor models from a markdown file containing Edge Deliv
 
 Run the following command to generate the `model.json` file below the project root directory from a markdown file containing Edge Delivery Service blocks:
 ```
-npm run md2model --file path/to/file.md
+npm run md2model --file /path/to/file.md
 ```
 Example:
 ```
