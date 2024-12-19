@@ -9,6 +9,8 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+// disable lint warning for console statements
+/* eslint-disable no-console */
 import fs from 'fs';
 import path from 'path';
 import yargs from 'yargs/yargs';
@@ -16,7 +18,7 @@ import { hideBin } from 'yargs/helpers';
 import { md2models } from './md2model/index.js';
 
 export async function generateUeModel() {
-// Parse the CLI arguments
+  // Parse the CLI arguments
   const { argv } = yargs(hideBin(process.argv));
   const inputFilePath = path.resolve(argv.file);
   const outputFilePath = path.resolve('model.json');
@@ -36,6 +38,6 @@ export async function generateUeModel() {
   }
 }
 
-generateUeModel();
+await generateUeModel();
 
 // npm run md2model --file test/importers/md2model/fixtures/container.md

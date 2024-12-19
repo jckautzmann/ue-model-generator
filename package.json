@@ -9,11 +9,23 @@
     "url": "https://github.com/jckautzmann/ue-model-generator.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "test:web": "web-test-runner test/browser/*.test.js --node-resolve",
+    "test:web:watch": "web-test-runner test/browser/*.test.js --node-resolve --watch",
+    "test": "c8 mocha && npm run test:web",
+    "semantic-release": "semantic-release",
+    "prepare": "npx husky install",
     "md2model": "node src/md2model.js --file"
   },
-  "keywords": [],
-  "author": "",
+  "mocha": {
+    "recursive": "true",
+    "spec": "test/**/*.spec.js",
+    "reporter": "mocha-multi-reporters",
+    "reporter-options": "configFile=.mocha-multi.json"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.6",
     "@adobe/helix-docx2md": "1.6.0",

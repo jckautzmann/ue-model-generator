@@ -20,6 +20,7 @@ function use(node) {
   return elements.length > 1;
 }
 
+// eslint-disable-next-line default-param-last,no-unused-vars
 function fields(idx, prefix = '', node) {
   const cellItems = getChildElements(node);
   let fieldIdx = 0;
