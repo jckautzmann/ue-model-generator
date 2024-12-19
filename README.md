@@ -1,6 +1,6 @@
 # Universal Editor models generator
 
-Generates the AEM Universal Editor models based on a markdown file containing the EDS blocks.
+Generates AEM Universal Editor models from a markdown file containing Edge Delivery Service blocks.
 
 ## Usage
 
