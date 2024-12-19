@@ -1,0 +1,10 @@
+{
+  "reporter": [
+    "lcov",
+    "text"
+  ],
+  "check-coverage": true,
+  "lines": 78,
+  "branches": 88,
+  "statements": 78
+}
