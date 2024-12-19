@@ -10,9 +10,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test:web": "web-test-runner test/browser/*.test.js --node-resolve",
-    "test:web:watch": "web-test-runner test/browser/*.test.js --node-resolve --watch",
-    "test": "c8 mocha && npm run test:web",
+    "test": "c8 mocha",
     "semantic-release": "semantic-release",
     "prepare": "npx husky install",
     "md2model": "node src/md2model.js --file"
